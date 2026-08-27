@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: mern-backend
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb+srv://Haidang041105:Haidang05@cluster0.tja129l.mongodb.net/cloud_lab?retryWrites=true&w=majority
+
+  frontend:
+    container_name: mern-frontend
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
