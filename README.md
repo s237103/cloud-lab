@@ -1,5 +1,5 @@
 # Cloud Computing Laboratory
-Student Name:
-Student ID:
-Class:
+Student Name:Huynh Hai Dang
+Student ID:237103
+Class:DH23TIN10
 Updated content
